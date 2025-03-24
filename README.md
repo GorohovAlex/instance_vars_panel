@@ -1,43 +1,56 @@
-# InstanceVarsPanel
+# Instance Vars Panel
 
-TODO: Delete this and the text below, and describe your gem
+This project provides a utility for managing and displaying instance variables in your application. It is designed to simplify debugging and improve code maintainability.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/instance_vars_panel`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Features
+
+- Easy management of instance variables.
+- Clear and concise display of variable states.
+- Lightweight and easy to integrate.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+To install the package, use Bundler. Add this line to your application's `Gemfile`:
 
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+gem 'instance_vars_panel'
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Then execute:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle install
+```
+
+Or install it yourself as:
+
+```bash
+gem install instance_vars_panel
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+To display the instance variables panel in your application, use the `render_instance_vars_panel` method. Here's an example:
 
-## Development
+```erb
+<%= render_instance_vars_panel %>
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+This will render a panel showing the current state of all instance variables in the context where it is called. You can customize its appearance and behavior by passing options to the method if needed.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/instance_vars_panel. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/instance_vars_panel/blob/master/CODE_OF_CONDUCT.md).
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and push to your fork.
+4. Submit a pull request.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENSE).
 
-## Code of Conduct
+## Contact
 
-Everyone interacting in the InstanceVarsPanel project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/instance_vars_panel/blob/master/CODE_OF_CONDUCT.md).
+For questions or feedback, please contact [your_email@example.com].

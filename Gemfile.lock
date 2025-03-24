@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    instance_vars_panel (0.1.2)
+    instance_vars_panel (0.1.6)
 
 GEM
   remote: https://rubygems.org/

@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "InstanceVarsPanel is a debugging tool designed to help developers inspect and analyze instance variables in Ruby applications with ease."
   spec.homepage = "https://github.com/GorohovAlex"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = ">= 2.0.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  gemspec = File.basename(__FILE__)
+  File.basename(__FILE__)
   spec.files = Dir.glob("{lib,exe}/**/*") + ["instance_vars_panel.gemspec"]
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }

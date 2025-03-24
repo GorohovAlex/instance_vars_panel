@@ -1,0 +1,10 @@
+%details{ style: "position: fixed; top: 10px; right: 10px; background: white; border: 1px solid #ccc; padding: 10px; z-index: 1000; max-width: 300px;" }
+  %summary{ style: "cursor: pointer; font-weight: bold;" } ⚙ Debug Info
+  %div{ style: "max-height: 300px; overflow: auto; padding: 5px; border-top: 1px solid #ccc;" }
+    %ul
+      - instance_variables.each do |var|
+        %li
+          %details
+            %summary{ style: "cursor: pointer; font-weight: bold;" }= var
+            %pre{ style: "white-space: pre-wrap; word-wrap: break-word; background: #f8f8f8; padding: 5px; border-radius: 5px;" }
+              = instance_variable_get(var).inspect
